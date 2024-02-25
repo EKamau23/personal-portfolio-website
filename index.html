@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge";>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal portfolio website</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/d37eda5af5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo1.jpg" alt="Logo" class="logo"/> 
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>FullStack Developer</p>
+                <h1>Hi, I'm<span> Eliud</span><br>Kamau from Kenya</h1>
+            </div>
+        </div>
+    </div>
+    <!-- about -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/about.jpg" alt=""/>
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I'm a passionate full-stack developer dedicated to transforming ideas into functional, user-friendly web applications. 
+                    With expertise in both front-end and back-end technologies, I craft seamless experiences that bridge creativity with functionality.
+                    My approach blends innovative design with efficient coding practices to deliver robust solutions. I thrive in collaborative environments,
+                    working closely with teams to turn concepts into code that drives impactful results. Let's build something extraordinary together.
+                    </p>
+
+                    <div class="tab-titles">
+                        <p><div class="tab-links active-link" onclick="openTab('skills')">Skills</div></p>
+                        <p><div class="tab-links" onclick="openTab('experience')">Experience</div></p>
+                        <p><div class="tab-links" onclick="openTab('education')">Education</div></p>
+                    </div>
+                    <div class="tab-contents active-tab">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App interface</li>
+                            <li><span>FrontEnd Development</span><br>Web app development</li>
+                            <li><span>BackEnd Development</span><br>Creating systems in the server side </li>
+                            <li><span>Mobile App Development</span><br>Building Android/iOS apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2024 - Current</span><br>FullStack Software Development Training at IST institute</li>
+                            <li><span>2023-2024</span><br>Python Programming Projects</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2023 - 2024</span><br>Certificate in Software Development from IST institute<br>Certificate in Python Programming</li>
+                            <li><span>2022</span><br>Certificate in ICDL 2</li>
+                            <li><span>2021</span><br>Certificate in ICDL 1</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- services -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>FrontEnd development</h2>
+                <p>Design and build the user interface and experience of a website or web application, using HTML, CSS and JavaScript.</p>
+                <a href="https://www.linkedin.com/in/eliud-kamau-aab306273/">Learn more...</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>BackEnd Development</h2>
+                <p>In backend development, I focus on building the server-side logic and database interactions that power websites and 
+                web applications.For API development, I design and implement RESTful APIs using tools like Flask-RESTful or Django REST framework,</p>
+                <a href="https://www.linkedin.com/in/eliud-kamau-aab306273/">Learn more...</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>Web Design</h2>
+                <p>When designing websites, I use applications like Figma to create visually appealing layouts and prototypes.
+                Figma allows me to collaborate with team members, iterate on designs, and create interactive prototypes that 
+                showcase the user experience</p>
+                <a href="https://www.linkedin.com/in/eliud-kamau-aab306273/">Learn more...</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- portfolio -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work1.jpg" alt="">
+                <div class="layer">
+                    <h3>React Development</h3>
+                    <p>i have done a few project and currently developing a portfolio website using React framework.</p>
+                    <a href="https://github.com/EKamau23"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work2.jpg" alt="">
+                <div class="layer">
+                    <h3>Javascript Development</h3>
+                    <p>I specialize in front-end development using JavaScript to create engaging and interactive web experiences.</p>
+                    <a href="https://github.com/EKamau23"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work5.jpg" alt="">
+                <div class="layer">
+                    <h3>Python Programming</h3>
+                    <p>I specialize in full-stack development, using Python for back-end services and APIs,
+                    alongside front-end technologies, to create robust and scalable web applications</p>
+                    <a href="https://github.com/EKamau23"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="https://github.com/EKamau23" class="btn">See more</a>
+    </div>
+</div>
+
+<!-- contact -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>kamaungige01@gmail.com</p>
+                <P><i class="fa-solid fa-square-phone"></i>0706048399</P>
+                <div class="social-icons">
+                    <br>
+                    <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.x-accounts.com/login"><i class="fa-brands fa-square-x-twitter"></i></a>
+                    <a href="https://www.instagram.com/direct/inbox/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/eliud-kamau-925184275/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="https://github.com/EKamau23" class="btn btn2">Checkout my GitHub</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © 2024 Eliud.</p>
+    </div>
+</div>
+
+<script src="main.js"></script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwYVv8og3SNpwVbHkDFVOdbQ99f-nA7zY8p29NPU-HwnVt0lPXa55jugfZerH6iqeicIQ/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById('msg')
+
+    form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully!"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },3000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+</script>
+</body>
+</html>
